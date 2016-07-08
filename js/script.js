@@ -1,3 +1,5 @@
+'use strict';
+
 function President(name, politicalParty, yearsInOffice, homeState) {
   this.name = name;
   this.politicalParty = politicalParty;
@@ -22,5 +24,5 @@ President.prototype.conductPressInterview = function() {
 }
 
 President.prototype.sayHi = function() {
-  return `Hi, my name is ${this.name}. I am from ${this.homeState}. I represent the ${this.politicalParty}s, and was in office ${this.yearsInOffice}.`;
+  return "Hi, my name is "+ this.name +". I am from "+ this.homeState +". I represent the "+ this.politicalParty +"s, and was in office "+ this.yearsInOffice+".";
 }
